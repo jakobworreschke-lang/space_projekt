@@ -17,3 +17,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6474525, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1005921616]
 environment = SubResource("Environment_47buk")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1532913101]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9759593, 2.6477692, 0)
