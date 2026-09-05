@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bqtqrvgxaylha"]
+
+[ext_resource type="PackedScene" uid="uid://bp36v16edm8l4" path="res://player.tscn" id="1_vaaba"]
+
+[sub_resource type="Environment" id="Environment_47buk"]
+background_mode = 1
+glow_enabled = true
+
+[node name="game-test" type="Node3D" unique_id=16969556]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=261448512]
+use_collision = true
+size = Vector3(10, 1, 10)
+
+[node name="Player" parent="." unique_id=1678299184 instance=ExtResource("1_vaaba")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6474525, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1005921616]
+environment = SubResource("Environment_47buk")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1532913101]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9759593, 2.6477692, 0)

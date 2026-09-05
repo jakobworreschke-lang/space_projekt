@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bp36v16edm8l4"]
+
+[ext_resource type="Script" uid="uid://h8n5t3o63tbj" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://boa7c5204xk2y" path="res://label.gd" id="2_onrkg"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_47buk"]
+
+[node name="Player" type="CharacterBody3D" unique_id=1678299184]
+script = ExtResource("1_4flbx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1928166751]
+shape = SubResource("CapsuleShape3D_47buk")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=758084094]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8076842, 0)
+
+[node name="Label" type="Label" parent="." unique_id=79021760]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -124.0
+offset_bottom = 23.0
+grow_horizontal = 0
+script = ExtResource("2_onrkg")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=707746882]
